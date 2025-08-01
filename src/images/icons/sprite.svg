@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink">
+      <style>:root>svg{display:none}:root>svg:target{display:block}</style>
+
+      <svg id="close" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L13.7742 13.7742" stroke-linejoin="round"></path>
+            <path d="M1 13.7734L13.7742 0.999243" stroke-linejoin="round"></path>
+      </svg>
+
+      <svg id="menu-burger" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.307 12h15.675M.307 5h23.386M.307 19h23.386" /></svg>
+      <svg id="menu-close" viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg"><path d="m1 1 17.032 17.032M1 18.031 18.032 1"  stroke-width="1.333" stroke-linejoin="round"/></svg>
+      
+</svg>
+
+
+

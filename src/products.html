@@ -1,0 +1,151 @@
+@@include('html/head.html', {
+    "title": "products"
+})
+
+<div class="wrapper">
+
+    @@include('html/header.html', {
+        'active_menu': 'products',
+        'color': 'white'
+    })
+    
+    <main class="content__wrapper">
+        <section class="hero">
+            <div class="container">	
+                <div class="hero__inner">
+                    <div class="hero__info">
+                        <h1 class="hero__title fs--md">A reliable partner in ferroalloy trade</h1>
+                        <div class="hero__intro mt--sm fs--md mw">From sourcing to shipment, we handle ferroalloy trade with precision and reliability</div>
+                    </div>
+
+                    <div class="hero__stats">
+                        <div class="hero__stats-item">
+                            <div class="hero__stats-val">10+</div>
+                            <div class="hero__stats-text">Years of Global Operations</div>
+                        </div>
+                        <div class="hero__stats-item">
+                            <div class="hero__stats-val">98% </div>
+                            <div class="hero__stats-text">On-time delivery</div>
+                        </div>
+                        <div class="hero__stats-item">
+                            <div class="hero__stats-val">35+ </div>
+                            <div class="hero__stats-text">Logistics countries</div>
+                        </div>
+                    </div>
+                </div>
+            </div>	
+            <div class="hero__bg">
+                <picture>
+                    <source srcset="@img/bg/hero-products-m.jpg" media="(max-width: 609px)">
+                    <img src="@img/bg/hero-products.jpg" alt="">
+                </picture>
+            </div>
+        </section><!--hero-->
+
+            
+        <section class="products section__mg">
+            <div class="container">	
+                <div class="section__head">
+                    <h2 class="section__title">Main products</h2>
+                </div>
+
+                <div class="products__items">
+                    <div class="products__item">
+                        <div class="products__item-photo"><img src="@img/products/1.jpg" alt=""></div>
+                        <div class="products__item-info">
+                            <div class="products__item-title">FeCr N <br> (Ferro-Chrome Nitruré)</div>
+                            <div class="products__item-text text">
+                                <b>Granulometry:</b> 10-50, 10-100 mm Cr 60% or 65% min, C 0,10% max, Si 1,50% max, N 3-4% or N 7-10%, S & P 0,03%  max
+                                <br>
+                                <b>Packing:</b> bags or drums on pallets
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__item-photo"><img src="@img/products/2.jpg" alt=""></div>
+                        <div class="products__item-info">
+                            <div class="products__item-title">FeSi <br> (Ferro-Silicon)</div>
+                            <div class="products__item-text text">
+                                <b>Size:</b> 3-10, 10-50, 20-80, 10-100 mm Si 65-75% min, Al 1.50 or 2% max, C 0.10% or 0.20% max, S & P 0.03% max <br>
+                                <b>Packing:</b> Bulk, big-bags or drums on pallets
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__item-photo"><img src="@img/products/3.jpg" alt=""></div>
+                        <div class="products__item-info">
+                            <div class="products__item-title">FeMn HC (High Carbon Ferro-Manganese)</div>
+                            <div class="products__item-text text">
+                                <b>Granulometry:</b> 10–100 mm <br> <b>Chemical Composition:</b> Mn 75–78% min, C 6–8%, Si 1.20% max, P 0.25% max, S 0.03% max <br>
+                                <b>Packing:</b> Bags, containers or in bulk
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__item-photo"><img src="@img/products/4.jpg" alt=""></div>
+                        <div class="products__item-info">
+                            <div class="products__item-title">FeCr HC (High Carbon Ferro-Chrome)</div>
+                            <div class="products__item-text text">
+                                <b>Granulometry:</b> 10–100 mm <br> <b>Chemical Composition:</b> Cr 60–65%, C 6–8%, Si 1.5–2.5%, P 0.03% max, S 0.04% max<br> <b>Packing:</b> Bulk or big bags
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__item-photo"><img src="@img/products/5.jpg" alt=""></div>
+                        <div class="products__item-info">
+                            <div class="products__item-title">FeMo <br> (Ferro-Molybdenum)</div>
+                            <div class="products__item-text text">
+                                <b>Granulometry:</b> 10–50 mm <br>
+                                <b>Chemical Composition:</b> Mo 60–70% min, Si 1.50% max, C 0.10% max, P 0.05% max, S 0.05% max <br>
+                                <b>Packing:</b> Steel drums or palletized bags
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="products__itinfo">
+                        <div class="products__itinfo-title section__title">Ready for partnership?</div>
+                        <div class="products__itinfo-text text lh">
+                            <p>We help companies confidently engage in foreign economic activities by connecting producers, traders, and consumers of raw materials.</p>
+                            <p>Contact the trading department — we will respond within the working day.</p>
+                        </div>
+                        <div class="products__itinfo-buttons">
+                            <button class="btn btn--md" data-open-popup="get-quote">Get a Quote</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>	
+        </section><!--  -->
+
+        
+        <section class="process section__mg">
+            <div class="container">	
+                <div class="section__head hcols al-center">
+                    <h2 class="section__title">How We Move products Worldwide</h2>
+                </div>
+        
+                <div class="process__carousel swiper js-process-carousel-m">
+                    <div class="process__photos gap--md swiper-wrapper">
+                        <div class="process__itphoto w-mdx swiper-slide"><img src="@img/process/6.jpg" alt=""></div>
+                        <div class="process__itphoto w-mdl swiper-slide"><img src="@img/process/7.jpg" alt=""></div>
+                        <div class="process__itphoto swiper-slide"><img src="@img/process/8.jpg" alt=""></div>
+                        <div class="process__itphoto swiper-slide"><img src="@img/process/9.jpg" alt=""></div>
+                        <div class="process__itphoto swiper-slide"><img src="@img/process/10.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>	
+        </section><!--  -->
+
+        @@include('html/blocks/geography.html', {})
+
+
+	</main><!--content__wrapper-->
+
+    @@include('html/footer.html', {})
+
+</div>
+
+@@include('html/popup.html', {})
+    
+</body>
+</html>

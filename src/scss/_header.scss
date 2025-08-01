@@ -1,0 +1,254 @@
+/**************************************************************
+header
+**************************************************************/
+.header {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    z-index: 99;
+    &.header--white {
+        color: $color-white;
+    }
+    &::after {
+        @include abs-all;
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        background: rgba(238, 238, 238, 0.1);
+        content: '';
+        z-index: -1;
+    }
+    &__inner {
+        display: flex;
+        align-items: center;
+        gap: 44px;
+        min-height: 100px;
+        padding: 10px 0;
+    }
+    &__logo {
+        max-width: 400px;
+        img {
+            max-height: 80px;
+        }
+    }
+    &__menu {
+        margin-left: auto;
+        ul {
+            display: flex;
+            gap: 44px;
+        }
+        li a {
+            position: relative;
+
+            &:after {
+                position: absolute;
+                bottom: 0; left: 0;
+                right: 0;
+                // width: 0; 
+                transform: scaleX(0);
+                transform-origin: right;
+                content: '';
+                transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);;
+                border-bottom: 1px solid;
+            }
+            @media (hover: hover) {
+              &:hover::after {
+                transform: scaleX(1);
+                transform-origin: left;
+              }
+            }
+        }
+    }
+
+    &__cbtn {
+        flex: 0 0 auto;
+        width: 44px; height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        border: 1px solid;
+        font-size: 16px;
+        .icon {
+            width: 50%; height: 50%;
+        }
+    }
+    &__lang {
+        position: relative;
+        z-index: 5;
+        &.opened, &:hover {
+            
+        }
+        &-current {
+            cursor: pointer;
+            position: relative;
+            &:hover {
+                
+            }
+        }
+        &.opened &-current {
+            
+        }
+        &.opened &-current .icon {
+           
+        }
+        &-open {
+            position: absolute;
+            left: 0; top: 0;
+            width: 100%; height: 100%;
+            z-index: 2;
+            cursor: pointer;
+            background: none;
+            border: none;
+            outline: none;
+            display: none;
+        }
+        &-drop {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            padding-top: 16px;           
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+            z-index: -1;
+            // overflow: hidden;                
+            &::after {
+                position: absolute;
+                bottom: -16px; left: -20px; right: -20px;
+                top: -60px;
+                -webkit-backdrop-filter: blur(20px);
+                backdrop-filter: blur(20px);
+                background: rgba(238, 238, 238, 0.1);
+                border-radius: 5px;
+                content: '';
+                z-index: -1;
+            }
+            li {
+                &.current {
+                    display: none;
+                }
+                & + li {
+                    margin-top: 6px;
+                }  
+            }
+            li a {
+                text-transform: uppercase;
+                color: #99e3f4;
+                border-color: #99e3f4;
+                transition: all 0.3s ease-in-out;
+                @media (hover: hover) {
+                    &:hover {
+                        color: #fff;
+                        border-color: #fff;
+                    }
+                }
+            }
+            li.current a {
+                text-decoration: underline;
+                pointer-events: none;
+            }
+        }
+        &:hover &-drop,
+        &.opened &-drop {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &__burger {
+        display: none;
+    }
+
+    @media (max-width: $md-desktop-lg) {
+        &__logo {
+            max-width: 300px;
+        }
+        &__cbtn {
+            width: 36px; height: 36px;
+            font-size: 14px;
+        }
+        &__lang {
+            &-drop {
+                padding-top: 12px;               
+                &::after {
+                    position: absolute;
+                    bottom: -12px; left: -16px; right: -16px;
+                    top: -50px;
+                }
+            }
+        }
+        
+    }
+    
+    @media (max-width: $md-desktop-md) {
+        &__inner {
+            gap: 24px;
+            min-height: 80px;
+        }
+        &__logo {
+            max-width: 286px;
+            img {
+                max-height: 60px;
+            }
+        }
+        &__menu {
+            ul {
+                gap: 24px;
+            }
+        }
+    }
+    @media (max-width: $md-desktop-md) {
+        &__inner {
+            min-height: 50px;
+        }
+        &__logo {
+            margin-right: auto;
+            max-width: 180px;
+            img {
+                max-height: 40px;
+            }
+        }
+        &__menu {
+           display: none;
+        }
+        &__lang {
+            display: none;
+        }
+        &__burger {
+            width: 32px;
+            height: 32px;
+            background: none;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            outline: 0;
+            position: relative;
+            .icon {
+                width: 24px; height: 24px;
+                color: $color-body;
+                .header--white & {
+                    color: $color-white;
+                }
+            }
+            
+            img {
+                transition: all 0.3s ease-in-out;
+            }    
+            .img-close {
+                opacity: 0;
+                @include abs-center;
+                width: 19px; height: 19px;
+            }
+            &.active {
+                img, .icon {
+                    opacity: 0;
+                }
+                .img-close {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@import 'components/navfix';

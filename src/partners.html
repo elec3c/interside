@@ -1,0 +1,40 @@
+@@include('html/head.html', {
+    "title": "partners"
+})
+
+<div class="wrapper">
+
+    @@include('html/header.html', {
+        'active_menu': 'partners',
+        'color': ''
+    })
+    
+    <main class="content__wrapper">
+                
+        <section class="partners section__mg section__first">
+            <div class="container">	
+                <div class="section__head text--center mb--lg">
+                    <h2 class="section__title fs--lg w-all">Serving Industry Leaders Worldwide</h2>
+                    <div class="section__intro mt--md">Interside has been working with leaders in the coal, metallurgy, and energy sectors for over 10 years. We build reliable logistics and trading chains, adapting to market conditions and customer needs.</div>
+                </div>
+            </div>	
+
+            @@include('html/blocks/clients_carousel.html', {})
+
+                
+        </section><!--  -->
+       
+
+        @@include('html/blocks/geography.html', {})
+
+
+	</main><!--content__wrapper-->
+
+    @@include('html/footer.html', {})
+
+</div>
+
+@@include('html/popup.html', {})
+    
+</body>
+</html>

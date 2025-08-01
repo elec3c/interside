@@ -1,0 +1,106 @@
+@@include('html/head.html', {
+    "title": "contacts"
+})
+
+<div class="wrapper">
+
+    @@include('html/header.html', {
+        'active_menu': 'contacts',
+        'color': 'white'
+    })
+    
+    <main class="content__wrapper">
+      
+        <section class="contacts contacts--main">
+            <div class="container">	
+                <div class="contacts__cgrid">
+                    
+                    <div class="contacts__head section__head text--white">
+                        <div class="section__subtitle mb--md">Our contacts</div>
+                        <h1 class="section__title">Global Reach, Local Expertise</h1>
+                        <div class="section__intro mt--sm fs--md">
+                            We operate across key global trade routes, ensuring seamless logistics and reliable deliveries worldwide
+                        </div>
+                    </div>
+
+                    <div class="contacts__right">
+                        <div class="contacts__map">
+                            <img src="@img/map-contacts-dott.svg" alt="">
+                            <div class="contacts__item item--first js-contacts-item" style="top: 15%; left: 9%;">
+                                <button class="contacts__item-btn js-contacts-toggle"></button>
+                                <div class="contacts__item-info">
+                                    <div class="contacts__item-title title fs--sm">Head Office — Netherlands</div>
+                                    <div class="contacts__item-text">
+                                        Weena 505, 3013 AL, Rotterdam, Netherlands <br> office@interside.nl <br> +31 10 890 1540
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts__item item--center js-contacts-item" style="top: 35%; left: 31%;">
+                                <button class="contacts__item-btn js-contacts-toggle"></button>
+                                <div class="contacts__item-info">
+                                    <div class="contacts__item-title title fs--sm">Head Office — Netherlands</div>
+                                    <div class="contacts__item-text">
+                                        Weena 505, 3013 AL, Rotterdam, Netherlands <br> office@interside.nl <br> +31 10 890 1540
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts__item item--center js-contacts-item" style="top: 40%; left: 51%;">
+                                <button class="contacts__item-btn js-contacts-toggle"></button>
+                                <div class="contacts__item-info">
+                                    <div class="contacts__item-title title fs--sm">Head Office — Netherlands</div>
+                                    <div class="contacts__item-text">
+                                        Weena 505, 3013 AL, Rotterdam, Netherlands <br> office@interside.nl <br> +31 10 890 1540
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts__item item--last js-contacts-item" style="top: 29%; left: 74%;">
+                                <button class="contacts__item-btn js-contacts-toggle"></button>
+                                <div class="contacts__item-info">
+                                    <div class="contacts__item-title title fs--sm">Head Office — Netherlands</div>
+                                    <div class="contacts__item-text">
+                                        Weena 505, 3013 AL, Rotterdam, Netherlands <br> office@interside.nl <br> +31 10 890 1540
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="contacts__form">
+                        <form action="" method="post">
+                            <input name="controll" class="no-display" type="text">
+                            <input type="hidden" name="form" value="Get a Quote">
+                            <input type="hidden" name="pagetitle" value="">
+                            
+                            <div class="form__row">
+                                <input type="text" name="name" class="input" placeholder="Name">
+                            </div>       
+                            <div class="form__row">
+                                <input type="tel" name="phone" class="input js-phone-mask" placeholder="Phone">
+                            </div>                         
+                            <div class="form__row">
+                                <input type="text" name="name" class="input" placeholder="E-mail">
+                            </div>
+                            <div class="form__row">
+                                <textarea name="message" class="input" placeholder="Your message"></textarea>
+                            </div>
+                            <div class="form__submit">
+                                <button class="btn btn--wall" type="submit">Get a Quote</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>	
+        </section><!--  -->
+
+	</main><!--content__wrapper-->
+
+    @@include('html/footer.html', {})
+
+</div>
+
+@@include('html/popup.html', {})
+    
+</body>
+</html>

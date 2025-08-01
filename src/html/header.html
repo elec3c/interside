@@ -1,0 +1,71 @@
+<header class="header  @@if(color=='white'){header--white}">
+	<div class="container">	
+		<div class="header__inner">
+			@@if (active_menu === 'main'){
+				<div class="header__logo"><img src="@img/logo@@if(color!='white'){-dark}.svg" alt=""></div>
+			}
+			@@if (active_menu !== 'main'){
+				<a href="/" class="header__logo"><img src="@img/logo@@if(color!='white'){-dark}.svg" alt=""></a>
+			}
+
+			<nav class="header__menu">
+				<ul>
+					<li class=" @@if (active_menu === 'about'){active}"><a href="about.html" >About Us</a></li>
+					<li class=" @@if (active_menu === 'shipping'){active}"><a href="shipping.html" >Shipping</a></li>
+					<li class=" @@if (active_menu === 'products'){active}"><a href="products.html" >Products</a></li>
+					<li class=" @@if (active_menu === 'partners'){active}"><a href="partners.html" >Partners</a></li>
+					<li class=" @@if (active_menu === 'process'){active}"><a href="process.html" >Process</a></li>
+					<li class=" @@if (active_menu === 'contacts'){active}"><a href="contacts.html" >Contacts</a></li>
+				</ul>
+			</nav>
+
+			<div class="header__lang js-lang">
+				<div class="header__lang-current header__cbtn">
+					<span>EN</span>
+					<button class="header__lang-open js-lang-open"></button>
+				</div>
+				<div class="header__lang-drop js-lang-drop">
+					<ul>
+						<li class="current"><a href="" class="header__cbtn">EN</a></li>
+						<li><a href="" class="header__cbtn">CH</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<button class="header__burger js-open-navfix">
+				<svg class="icon"><use xlink:href="@img/icons/sprite.svg#menu-burger"></use></svg>
+				<svg class="icon img-close"><use xlink:href="@img/icons/sprite.svg#menu-close"></use></svg>
+			</button>
+		</div>
+	</div>
+	
+	<div class="navfix js-navfix">
+		<div class="container">
+			<div class="navfix__cols">
+				<div class="navfix__menu">
+					<ul>
+						<li class=" @@if (active_menu === 'about'){active}"><a href="about.html" >About Us</a></li>
+						<li class=" @@if (active_menu === 'shipping'){active}"><a href="shipping.html" >Shipping</a></li>
+						<li class=" @@if (active_menu === 'products'){active}"><a href="products.html" >Products</a></li>
+						<li class=" @@if (active_menu === 'partners'){active}"><a href="partners.html" >Partners</a></li>
+						<li class=" @@if (active_menu === 'process'){active}"><a href="process.html" >Process</a></li>
+						<li class=" @@if (active_menu === 'contacts'){active}"><a href="contacts.html" >Contacts</a></li>
+					</ul>
+				</div>
+
+				<div class="navfix__right">
+					<div class="navfix__tt">Do you want a reliable logistics partner?</div>
+					<div class="navfix__buttons">
+						<button class="btn" data-open-popup="">Get a Quote</button>
+					</div>
+					<div class="navfix__lang">
+						<ul>
+							<li class="current"><a href="" class="header__cbtn">EN</a></li>
+							<li><a href="" class="header__cbtn">CH</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+</header>
