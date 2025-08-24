@@ -224,6 +224,8 @@ textarea.input {
 }
 
 .btn {
+    position: relative;
+    overflow: hidden;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -238,10 +240,23 @@ textarea.input {
     cursor: pointer;
     outline: none;
     transition: all 0.2s ease-in-out;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    &::before {
+        @include abs-all;
+        transform: translateY(-100%);
+        background: $color-accent-hover;
+        transition: all 0.2s ease-in-out;
+        z-index: -1;
+        content: '';
+    }
     &--bd {
         background: none;
         border: 1px solid $color-accent;
         color: $color-accent;
+        &::before {
+            background: $color-accent;
+        }
         &.btn--black {
             color: $color-body;
             border-color: $color-body;
@@ -249,7 +264,10 @@ textarea.input {
     }
     @media (any-hover:hover) {
         &:hover {
-            background: $color-accent-hover;
+            // background: $color-accent-hover;
+            &::before {
+                transform: translateY(0);
+            }
         }
         &--bd:hover {
             background: $color-accent;
