@@ -6,8 +6,18 @@ header
     top: 0; left: 0;
     width: 100%;
     z-index: 99;
+    transition: transform .3s linear;
     &.header--white {
         color: $color-white;
+    }
+    &.fixed {
+        position: fixed;
+        transform: translateY(-100%);
+        background: #fff;
+        color: $color-body;
+    }
+    &.show {
+        transform: translateY(0);
     }
     &::after {
         @include abs-all;
@@ -16,6 +26,9 @@ header
         background: rgba(238, 238, 238, 0.1);
         content: '';
         z-index: -1;
+        transition: all 0.3s linear;
+    }
+    &.header--white:after {
     }
     &__inner {
         display: flex;
@@ -26,8 +39,23 @@ header
     }
     &__logo {
         max-width: 400px;
+        position: relative;
         img {
             max-height: 80px;
+            transition: all 0.3s linear;
+        }
+        .img-white {
+            opacity: 0;
+            position: absolute;
+            top: 0; left: 0;
+        }
+        .header.header--white:not(.fixed) & {
+            img {
+                opacity: 0;
+            }
+            .img-white {
+                opacity: 1;
+            }
         }
     }
     &__menu {

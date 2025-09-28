@@ -55,16 +55,36 @@ document.addEventListener('DOMContentLoaded', () => {
 	
 	
 
+	const header = document.querySelector('header');
 	let scrollPosition = window.pageYOffset;
-	if (scrollPosition > 0) document.querySelector('header').classList.add('fixed');
-
+	let oldScrollY = window.pageYOffset;
+	let newScrollY = 0;
+	let deltaScrolY = 0;
+	if (scrollPosition > 0) header.classList.add('fixed');
+	let deltaScroll =  (window.innerWidth < 768) ? 0 : 100;
 
 	window.addEventListener('scroll', function(){  
 		scrollPosition = window.pageYOffset;    
+
+	
+		newScrollY = scrollPosition;
+		deltaScrolY = oldScrollY - newScrollY;
+		// console.log(deltaScrolY);
+		if(deltaScrolY > 0){
+			header.classList.add('show'); 
+		}else{
+			header.classList.remove('show');
+		}
+
+		oldScrollY = newScrollY;
+	
 		
-		if (scrollPosition > 0) document.querySelector('header').classList.add('fixed'); 
-		else document.querySelector('header').classList.remove('fixed'); 
+		if (scrollPosition > 0) header.classList.add('fixed'); 
+		else header.classList.remove('fixed', 'show'); 
+
+		
 	});
+
 
 	
 	let btn_scroll = document.querySelectorAll('[data-scroll]');

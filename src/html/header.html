@@ -1,12 +1,10 @@
 <header class="header  @@if(color=='white'){header--white}">
 	<div class="container">	
 		<div class="header__inner">
-			@@if (active_menu === 'main'){
-				<div class="header__logo"><img src="@img/logo@@if(color!='white'){-dark}.svg" alt=""></div>
-			}
-			@@if (active_menu !== 'main'){
-				<a href="/" class="header__logo"><img src="@img/logo@@if(color!='white'){-dark}.svg" alt=""></a>
-			}
+				<div class="header__logo">
+					<img src="@img/logo.svg" class="img-white" alt="">
+					<img src="@img/logo-dark.svg" alt="">
+				</div>
 
 			<nav class="header__menu">
 				<ul>
