@@ -25,7 +25,7 @@
 
          <div class="footer__bottom show-tablet-sm">
            <a href="" class="footer__policy">Privacy policy</a>
-           <a href="" class="footer__policy">Terms of Use</a>
+           {* <a href="" class="footer__policy">Terms of Use</a> *}
            <div class="footer__develop">
              Разработка сайтов <br> <a href="https://k2studio.pro/">k2studio.pro</a>
            </div>
@@ -38,7 +38,7 @@
          <a href="" class="footer__policy">Privacy policy</a>
        </div>
        <div class="footer__center col-2 col-mdx-3">
-         <a href="" class="footer__policy">Terms of Use</a>
+         {* <a href="" class="footer__policy">Terms of Use</a> *}
        </div>
        <div class="footer__develop footer__right col-2  col-mdx-3">
          Developed by <br> <a href="https://k2studio.pro/">k2studio.pro</a>

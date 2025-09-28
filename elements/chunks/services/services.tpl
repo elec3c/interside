@@ -7,18 +7,18 @@
         <div class="section__intro">{$_modx->resource.services_text}</div>
       </div>
       <div class="services__cards col-8">
-        <div class="services__card">
+        <a href="{$_modx->makeUrl(8)}" class="services__card">
           <div class="services__card-photo"><img src="{$_modx->resource.services_sub_image_1}" alt="{$_modx->resource.services_sub_title_1}"></div>
           <div class="services__card-info">
             <div class="services__card-title title">{$_modx->resource.services_sub_title_1}</div>
           </div>
-        </div>
-        <div class="services__card">
+        </a>
+        <a href="{$_modx->makeUrl(7)}" class="services__card">
           <div class="services__card-photo"><img src="{$_modx->resource.services_sub_image_2}" alt="{$_modx->resource.services_sub_title_2}"></div>
           <div class="services__card-info">
             <div class="services__card-title title">{$_modx->resource.services_sub_title_2}</div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>

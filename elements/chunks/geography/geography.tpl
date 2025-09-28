@@ -21,20 +21,20 @@
       </div>
       <div class="geography__map">
         <picture class="section__tab active js-tabs-content" data-tab="1">
-          <source srcset="/assets/images/geography/map-1-m.svg" media="(max-width: 609px)">
-          <img src="/assets/images/geography/map-1.svg" alt="">
+          <source srcset="assets/images/geography/map-1-m.svg" media="(max-width: 609px)">
+          <img src="assets/images/geography/map-1.svg" alt="">
         </picture>
         <picture class="section__tab js-tabs-content" data-tab="2">
-          <source srcset="/assets/images/geography/map-2-m.svg" media="(max-width: 609px)">
-          <img src="/assets/images/geography/map-2.svg" alt="">
+          <source srcset="assets/images/geography/map-2-m.svg" media="(max-width: 609px)">
+          <img src="assets/images/geography/map-2.svg" alt="">
         </picture>
         <picture class="section__tab js-tabs-content" data-tab="3">
-          <source srcset="/assets/images/geography/map-3-m.svg" media="(max-width: 609px)">
-          <img src="/assets/images/geography/map-3.svg" alt="">
+          <source srcset="assets/images/geography/map-3-m.svg" media="(max-width: 609px)">
+          <img src="assets/images/geography/map-3.svg" alt="">
         </picture>
         <picture class="section__tab js-tabs-content" data-tab="4">
-          <source srcset="/assets/images/geography/map-4-m.svg" media="(max-width: 609px)">
-          <img src="/assets/images/geography/map-4.svg" alt="">
+          <source srcset="assets/images/geography/map-4-m.svg" media="(max-width: 609px)">
+          <img src="assets/images/geography/map-4.svg" alt="">
         </picture>
       </div>
     </div>

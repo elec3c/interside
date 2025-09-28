@@ -5,7 +5,7 @@
   {include 'file:chunks/whywe/whywe.tpl'}
   {include 'file:chunks/mabout/mabout.tpl'}
   {include 'file:chunks/process/process.tpl'}
-  {include 'file:chunks/clients/clients.tpl'}
+  {* {include 'file:chunks/clients/clients.tpl'} *}
   {include 'file:chunks/contacts/contactspage.tpl'}
 {/block}
 
