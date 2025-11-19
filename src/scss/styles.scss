@@ -719,10 +719,10 @@
     }
     &__map {
         margin: 0 auto;
-        max-width: 860px;
+        max-width: 770px;
         position: relative;
         .contacts__cgrid & {
-            max-width: 995px;
+            max-width: 920px;
             margin-right: 0;
         }
         > img {
@@ -1227,7 +1227,7 @@
     @media (max-width: $md-mobile-lg) {
         &__map {
             margin: 27px auto 0;
-            width: 80%;
+            width: 90%;
         }
     }
 }

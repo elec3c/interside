@@ -11,7 +11,13 @@ footer
         }
     }
     &__cols {
-        
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+    }
+    &__left, &__right {
+        display: flex;
+        flex-direction: column;
     }
     &__tt {
         text-wrap: balance;
@@ -20,10 +26,13 @@ footer
         margin-left: 33.3%;
     }
     &__menu {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 20px;
+        }
         li {
-            & + li {
-                margin-top: 2px;
-            }
+           
         }
     }
     &__contacts {
@@ -35,8 +44,11 @@ footer
     }
 
     &__bottom {
-        margin: 68px 0 5px;
+        margin-top: auto;
+        padding-top: 60px;
+        margin-bottom: 5px;
         align-items: flex-end;
+        justify-content: space-between;
         color: #8a8a8a;
         font-size: 16px;
         a {
@@ -59,7 +71,6 @@ footer
             }
         }
         &__bottom {
-            margin-top: 48px;
             font-size: 14px;
         }
     }
@@ -75,7 +86,7 @@ footer
             width: 25%;
         }
         &__right {
-            flex: 1 0 0;
+          
         }
     }
     @media (max-width: $md-tablet-sm) {
@@ -90,15 +101,18 @@ footer
             width: 50%;
         }
         &__menu {
-            li + li {
-                margin-top: 4px;
+            
+            ul {
+                flex-direction: column;
+                gap: 5px;
             }
         }
         &__right {
-            width: 50%;
+            
         }
         &__bottom {
-            margin-top: auto;
+            padding-top: 0;
+            margin-top: 0;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -113,8 +127,11 @@ footer
     @media (max-width: $md-mobile-lg) {
         font-size: 14px;
         &__left {
-            width: 100%;
+            width: 50%;
             max-width: 270px;
+        }
+        &__right {
+            min-width: 45%;
         }
         &__buttons {
             .btn {
