@@ -257,6 +257,9 @@ header
                 .header--white & {
                     color: $color-white;
                 }
+                .header--white.fixed & {
+                    color: $color-body;
+                }
             }
             
             img {
