@@ -25,11 +25,94 @@
     }
     &__menu {
         li {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0 10px;
+            position: relative;
             & + li {
                 margin-top: 24px;
             }
+            &.active:before {
+                position: absolute;
+                top: -8px; bottom: -8px;
+                left: -15px;
+                width: 2px;
+                background: $color-accent;
+                content: '';
+            }
             a {
                 font-size: 18px;
+                text-transform: uppercase;
+            }
+        }
+        ul ul {
+            width: 100%;
+            overflow: hidden;
+            opacity: 0;
+            max-height: 0px;
+            transition: all .3s ease-in-out;
+            padding-left: 24px;
+            margin-left: -15px;
+            position: relative;
+            &.opened {
+                opacity: 1;
+                margin-top: 16px;
+                margin-bottom: -8px;
+            }
+            &:before {
+                position: absolute;
+                top: -9px; bottom: -9px;
+                left: 0;
+                width: 2px;
+                background: $color-accent;
+                content: '';
+            }
+            li + li {
+                margin-top: 16px;
+            }
+            li:first-child {
+                margin-top: 9px;
+            }
+            li:last-child {
+                margin-bottom: 9px;
+            }
+            a {
+                opacity: 0.7;
+            }
+        }
+        &-toggle {
+            margin-left: auto;
+            position: relative;
+            flex: 0 0 auto;
+            background: none;
+            border: none;
+            outline: none;
+            // position: absolute;
+            // top: 0px; right: 0;
+            z-index: 5;
+            color: $color-body;
+            width: 24px; height: 24px;
+            left: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease-in-out;
+            &::after, &:before {
+                @include abs-center;
+                width: 2px; height: 60%;
+                background: #fff;
+                z-index: -2;
+                content: '';
+                transition: all 0.3s ease-in-out;
+            }
+            &:before {
+                width: 60%; height: 2px;
+            }
+            li.opened > & {
+                &::after {
+                    height: 0;
+                }
             }
         }
     }
@@ -66,6 +149,7 @@
                 border-color: #808b98;
             }
         }
+        
     }
 
     @media (max-width: $md-mobile-lg) {
