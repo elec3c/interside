@@ -30,7 +30,7 @@
             <textarea name="message" class="input" placeholder="Your message"></textarea>
           </div>
           <div class="form__submit">
-            <button class="btn btn--wall" type="submit">Get a Quote</button>
+            <button class="btn btn--wall" type="submit">Send</button>
           </div>
         </form>
       </div>

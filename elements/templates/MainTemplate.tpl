@@ -6,6 +6,6 @@
   {include 'file:chunks/mabout/mabout.tpl'}
   {include 'file:chunks/process/process.tpl'}
   {* {include 'file:chunks/clients/clients.tpl'} *}
-  {include 'file:chunks/contacts/contactspage.tpl'}
+  {include 'file:chunks/contacts/contactspage2.tpl'}
 {/block}
 

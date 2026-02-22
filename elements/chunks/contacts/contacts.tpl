@@ -5,7 +5,7 @@
         <div class="section__subtitle mb--md">Our contacts</div>
         <h2 class="section__title">Global Reach, Local Expertise</h2>
         <div class="section__buttons mt--md">
-          <button class="btn" data-open-popup="get-quote">Get a Quote</button>
+          <button class="btn" data-open-popup="get-quote">Send</button>
         </div>
       </div>
       <div class="contacts__right col-8">

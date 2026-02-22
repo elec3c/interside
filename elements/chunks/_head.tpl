@@ -2,7 +2,7 @@
 {set $description = $_modx->resource.description | replace :' "':' «' | replace :'"':'»'}
 {set $keywords = 'seoPro.keywords' | placeholder} 
 {set $page = 'site_url' | config ~ $_modx->resource.uri | replace : "index/" : ""}
-
+ 
 <meta charset="utf-8">
 <meta name="robots" content="">
 <meta name="description" content="{$description}">

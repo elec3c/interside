@@ -34,8 +34,8 @@
     </div>
   </div>
 
-  <div class="section__buttons text--center">
+  {* <div class="section__buttons text--center">
     <a href="partners.html" class="btn">View All Partners</a>
-  </div>
+  </div> *}
 
 </section><!--  -->

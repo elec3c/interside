@@ -3,6 +3,14 @@
     <div class="section__head">
       <h2 class="section__title">{$_modx->resource.products_title}</h2>
     </div>
+    <div class="products__itinfo">
+      <div class="text lh">
+        {$_modx->resource.prod_text}
+      </div>
+
+    </div>
+
+
 
     <div class="products__items">
       {set $cards = json_decode($_modx->resource.products_cards, true)}
@@ -16,14 +24,14 @@
             <div class="products__item-title">{$card.name}</div>
             <div class="products__item-text text">
               {$card.text}
-              
+
             </div>
           </div>
         </div>
       {/foreach}
 
 
-
+{* 
       <div class="products__itinfo">
         <div class="products__itinfo-title section__title">Ready for partnership?</div>
         <div class="products__itinfo-text text lh">
@@ -34,7 +42,7 @@
         <div class="products__itinfo-buttons">
           <button class="btn btn--md" data-open-popup="get-quote">Get a Quote</button>
         </div>
-      </div>
+      </div> *}
     </div>
 
   </div>

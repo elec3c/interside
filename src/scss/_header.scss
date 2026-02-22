@@ -207,7 +207,7 @@ header
         
     }
     
-    @media (max-width: $md-desktop-md) {
+    @media (max-width: $md-tablet-sm) {
         &__inner {
             gap: 24px;
             min-height: 80px;
@@ -224,7 +224,7 @@ header
             }
         }
     }
-    @media (max-width: $md-desktop-md) {
+    @media (max-width: $md-tablet-sm) {
         &__inner {
             min-height: 50px;
         }

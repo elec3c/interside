@@ -32,7 +32,7 @@
       <div class="contacts__form">
         <form action="" method="post">
           <input name="controll" class="no-display" type="text">
-          <input type="hidden" name="form" value="Get a Quote">
+          <input type="hidden" name="form" value="Send">
           <input type="hidden" name="pagetitle" value="">
 
           <div class="form__row">
@@ -48,7 +48,7 @@
             <textarea name="message" class="input" placeholder="Your message"></textarea>
           </div>
           <div class="form__submit">
-            <button class="btn btn--wall" type="submit">Get a Quote</button>
+            <button class="btn btn--wall" type="submit">Send</button>
           </div>
         </form>
       </div>
