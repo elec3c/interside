@@ -8,7 +8,15 @@
 
 			<nav class="header__menu">
 				<ul>
-					<li class=" @@if (active_menu === 'about'){active}"><a href="about.html" >About Us</a></li>
+					<li class=" @@if (active_menu === 'about'){active}"><a href="about.html" >About Us</a>
+						<div class="submenu">
+							<ul>
+								<li><a href="">About</a></li>
+								<li><a href="">Worldwide offices</a></li>
+								<li><a href="">Events & insights</a></li>
+							</ul>
+						</div>
+					</li>
 					<li class=" @@if (active_menu === 'shipping'){active}"><a href="shipping.html" >Shipping</a></li>
 					<li class=" @@if (active_menu === 'products'){active}"><a href="products.html" >Products</a></li>
 					<li class=" @@if (active_menu === 'partners'){active}"><a href="partners.html" >Partners</a></li>
